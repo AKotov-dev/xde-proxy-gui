@@ -57,7 +57,8 @@ applications (for example, web browsers) to react to proxy changes immediately.
 
 Additionally, the script exports environment variables:
 ```
-http_proxy / https_proxy / ftp_proxy / ALL_PROXY /no_proxy
+http_proxy / https_proxy / ftp_proxy / all_proxy /no_proxy
+HTTP_PROXY / HTTPS_PROXY / FTP_PROXY / ALL_PROXY / NO_PROXY
 ```
 These variables are used by CLI applications. Because environment variables cannot be updated in already running shells, **a new terminal must be opened** after changing proxy settings.  
 
