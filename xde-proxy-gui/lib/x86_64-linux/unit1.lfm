@@ -1,0 +1,476 @@
+object MainForm: TMainForm
+  Left = 330
+  Height = 493
+  Top = 127
+  Width = 534
+  ActiveControl = Edit1
+  Caption = 'MainForm'
+  ClientHeight = 493
+  ClientWidth = 534
+  SessionProperties = 'Height;Left;Top;Width'
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object ApplyBtn: TSpeedButton
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 398
+    Height = 40
+    Top = 8
+    Width = 128
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    Caption = 'Apply'
+    OnClick = ApplyBtnClick
+  end
+  object GroupBox1: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = RadioGroup1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Edit7
+    Left = 8
+    Height = 253
+    Top = 90
+    Width = 518
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 10
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 15
+    Caption = 'Proxy settings'
+    ClientHeight = 235
+    ClientWidth = 516
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 9
+      Height = 17
+      Top = 16
+      Width = 70
+      Caption = 'HTTP proxy'
+    end
+    object Label2: TLabel
+      AnchorSideTop.Control = Edit2
+      AnchorSideTop.Side = asrCenter
+      Left = 9
+      Height = 17
+      Top = 119
+      Width = 77
+      Caption = 'HTTPS proxy'
+    end
+    object Label3: TLabel
+      AnchorSideTop.Control = Edit3
+      AnchorSideTop.Side = asrCenter
+      Left = 9
+      Height = 17
+      Top = 191
+      Width = 90
+      Caption = 'SOCKS-5 proxy'
+    end
+    object Edit1: TEdit
+      AnchorSideLeft.Control = Edit3
+      AnchorSideTop.Control = Label1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Label4
+      Left = 104
+      Height = 37
+      Top = 6
+      Width = 266
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Right = 10
+      TabOrder = 0
+      OnChange = Edit1Change
+    end
+    object Edit2: TEdit
+      AnchorSideLeft.Control = Edit3
+      AnchorSideTop.Control = Label2
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Label5
+      Left = 104
+      Height = 37
+      Top = 109
+      Width = 266
+      Anchors = [akLeft, akRight]
+      BorderSpacing.Right = 10
+      TabOrder = 3
+    end
+    object Edit3: TEdit
+      AnchorSideLeft.Control = Label3
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Label3
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Label6
+      Left = 104
+      Height = 37
+      Top = 181
+      Width = 266
+      Anchors = [akLeft, akRight, akBottom]
+      BorderSpacing.Left = 5
+      BorderSpacing.Right = 10
+      TabOrder = 5
+    end
+    object Edit4: TEdit
+      AnchorSideTop.Control = Edit1
+      AnchorSideRight.Control = GroupBox1
+      AnchorSideRight.Side = asrBottom
+      Left = 411
+      Height = 37
+      Top = 6
+      Width = 97
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 8
+      TabOrder = 1
+      OnChange = Edit1Change
+      OnKeyPress = Edit4KeyPress
+    end
+    object Edit5: TEdit
+      AnchorSideTop.Control = Edit2
+      AnchorSideRight.Control = GroupBox1
+      AnchorSideRight.Side = asrBottom
+      Left = 411
+      Height = 37
+      Top = 109
+      Width = 97
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 8
+      TabOrder = 4
+      OnKeyPress = Edit4KeyPress
+    end
+    object Edit6: TEdit
+      AnchorSideTop.Control = Edit3
+      AnchorSideRight.Control = GroupBox1
+      AnchorSideRight.Side = asrBottom
+      Left = 411
+      Height = 37
+      Top = 181
+      Width = 97
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 8
+      TabOrder = 6
+      OnKeyPress = Edit4KeyPress
+    end
+    object Label4: TLabel
+      AnchorSideTop.Control = Edit4
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Edit4
+      Left = 380
+      Height = 17
+      Top = 16
+      Width = 26
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 5
+      Caption = 'Port'
+    end
+    object Label5: TLabel
+      AnchorSideTop.Control = Edit5
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Edit5
+      Left = 380
+      Height = 17
+      Top = 119
+      Width = 26
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 5
+      Caption = 'Port'
+    end
+    object Label6: TLabel
+      AnchorSideTop.Control = Edit6
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Edit6
+      Left = 380
+      Height = 17
+      Top = 191
+      Width = 26
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 5
+      Caption = 'Port'
+    end
+    object CheckBox2: TCheckBox
+      AnchorSideLeft.Control = Edit3
+      AnchorSideTop.Control = Edit1
+      AnchorSideTop.Side = asrBottom
+      Left = 104
+      Height = 32
+      Top = 51
+      Width = 246
+      BorderSpacing.Top = 8
+      Caption = 'Also use this HTTP proxy for HTTPS'
+      TabOrder = 2
+      OnChange = CheckBox2Change
+    end
+  end
+  object StaticText1: TStaticText
+    Left = 8
+    Height = 18
+    Top = 475
+    Width = 526
+    Align = alBottom
+    BorderSpacing.Left = 8
+    Caption = 'License: GPLv3   Author: AKotov-dev (C) 2026'
+    Color = clDefault
+    Font.Color = clGray
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    ParentColor = False
+    TabOrder = 4
+  end
+  object Label7: TLabel
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = ApplyBtn
+    Left = 335
+    Height = 17
+    Top = 20
+    Width = 58
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 5
+    Caption = 'working...'
+    Visible = False
+  end
+  object Image1: TImage
+    Left = 296
+    Height = 64
+    Top = 48
+    Width = 64
+    AutoSize = True
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963340D000089504E47
+      0D0A1A0A0000000D4948445200000040000000400806000000AA6971DE000000
+      0970485973000005C4000005C4019B79B5000000001974455874536F66747761
+      7265007777772E696E6B73636170652E6F72679BEE3C1A00000CC14944415478
+      9CE59B7B74D5D595C73FFBFC02481ED0525098B6D3DA71AA0E8FF24A428A1515
+      ADE3405B400DBED68CCCB4E40175D419569110D65D405AF1C188C52417B5CC9A
+      2EA9B954B453D44AAB60B1631EC4524114714D1FB69602A5224924DCDFEFECF9
+      E35E2C26BFD70D21336BCDF7AFBB7EFB7BF6D967DFF33B7B9F7DCE4F18609425
+      1E19E139EE56846980641F2B4AB3E3E5CD7E39F1D5A303698F19C8CE00ACE3DD
+      8850C69F070F200865D6F16E1C687B06DE0142515F64670B03EE80FF6B90684A
+      FFA06C75C3C73D65122295C0AC00DA565493833CF7959F25BEFECE40D875D61C
+      50B676ED50B733FF1A81F9083380F372547110D88E4A2ADF1BFCA31D890527CE
+      8299FDEF80D2BAFA0958B344853940613FA97D4F600B867B5B9655EEEB279D40
+      0E0EB83E9572DEDE7F6496ABF2F6AE15553FEF299F56979C6CD15A94AFE4A237
+      475894EF3B2AAB5F5E51B1C7CF06ACF78966EFD05612091B47612C43C7265283
+      0BF28EA680AF001E4A456B6DE5A300D3D73C5A9476DD7B515D18575F3FC00ABA
+      DE75CD5DED898A2E80D255C9452AFA209985FD079DEE88F2D712E527A314451A
+      3C36911A5C30E86813CA9CD31E2BE86D82D9ADB011F4823E0FE5CCF04BA3FA8F
+      1EE662117D88D3C623E8B37F1C969EFBD66DB775872908774022614AF2466F21
+      F3CFF784C6D2717A03D17744652FC27E450E035D0046B5C00AE7A27C56601C30
+      26AE4EC01214CE85A75AD307AF0D7B1DF2C2344F73CE9D6DFD079F511F0FCDA0
+      8F619C6D6DCB16BE79BAE04F4FFEDB47349DAF23CA2B8F9DFE7CCA379317E579
+      7A35C24D0A2511FA837319654EA933E6CA16D81644097580ABF2B6113CC08930
+      A25753511EF78CAED95553B5577F98CCEFEA4ACFD4A6FA2A90C9A01701E77212
+      C0A3A3A91EE020C21BA8B68B78DBF339B141CAEF5C575A573F41D52C05CAFB60
+      87E7191B9A4F44FE8BA5AB1A17A8F00871B34665A7355ABDABA66A6FC7A6FA09
+      38DC0E5C0739A7B9C71436E3D9078A6E5AFCDAD455F5171A310F013363B657A0
+      BA757965631829D6342E59D55081484304BF1B6549EBF28AF527B6349C9F76B9
+      5FE89790684578C23876C9D0798B7E535AB7E19F155D030C0E6FA35F6BA9A9FA
+      4E94F2B87B810311F23F0097B42CAF58DF916ABCD375D92B3087FE098B4695EB
+      3DD7ECEBD85C7F5B73CDC275C6CAA5C0A19036EA09FBE3288F3470FA9A478BD2
+      E9F4ABC0A70328BF721CEFAA1FFC1507F391EFA1CC8ED3715FA1F0546177E72D
+      A5BF1DFE71AC6E03FD5400F580E7CAC4537942102267C0C974FA3E0207AF87AD
+      DABF7DEE42FD53BECA0B677BF00002733A8614FCE4C71798239E3293CCECF3C3
+      5F3B83F4EE18FA8231AD2E39D9AAEE0AE0750397B47C4EF67574B93F11A42CD2
+      FAFE455B97E8155F7A53C629E645FCD704EB5899E897369F42E80CB0682D414E
+      5296B4D454B477BEEF359DC1E00F0187FBD8B678A8CA779B6BAA5A505D1AC031
+      9ED1DA30258133A078E586B162ECABF83949D9D9BABC624647AAF14ED0FB629B
+      2CECC4B2C5CB334F0FB3237E2DE5995C5D9F7970C8F18EBC4F1B95D982CE5598
+      1E5BA77247E1FCAA7525AB1BB72332C38FE158F95CD02C087440E9AAC6EFAA70
+      8B8FC8556B26EE1CEBBEEFBAEC058646DB4833D86F14CD5FFCD3282EC0F1A687
+      2E17640D501C83DEE558193BE3800CC7D08E5FB2A4FC476B6DE53FF835F67D05
+      2E4B6C3C47852FFBC94479BC6DC5C2D7D22EF71363F0A8DE5DF8FAA1E971070F
+      50347FD1F602195986726F0C7ABE357A5FEB8ACA5F087CDF9721CC2D5BBBD6D7
+      56DF1950BABAE15A457C9559D1F13BCE5783C3EEA0F61F2857BE567043F523E1
+      F687A33355BF509564044D5565C2CC37C5C1B03B8032AF7579D5933D9F062C82
+      727D4047CDBB6AAAF666D3DBF01C42F5EE331D3C404179F58618334104BDBD75
+      45E52F106D0BA0F88EC9D7010A97F92BD1C7F487C97C32B97D20149A0BDE385C
+      13C6C905056F1C5A0A040C2C0BE17A4DAD1D2A561E0B605CE6F7B097034A130F
+      7F828002A6A83CD7F5BE7725911B1B5D26314B527120898455ECBF46D0867569
+      FEE58217B4F51D33A52ED9ABCED0CB01EAB813FD5AABE83B2DB5950754B93CDC
+      5A7616CD5FB43DC2D89C51347FF14F055E0AE3A8DA99CDB58B5E275351EE05C7
+      DA293D9FE595251E19611DEF46359AA9E02A5FF06B2C2A99382A4CF9A016E46F
+      C61361D233810A4FA25C124810A60028EC1118DD5B2E9525758D630154399E76
+      876CCAF3F2DCA78169E18302844C3547F5B361EB9FB5FA6CD440FA0A6B9C678C
+      E7DD1F42B910C8D8AA5CE5239F85660E6504189CD77D9D014AE3742ECA114D24
+      0CC8B921342D3A36E89771F4F50545F6A3FF0DA17FD5799A4818C9D41BE3A0C4
+      1073CFAEAAC78F5E30A230827F442A2AD2313BCF19D9D4F98F619423933E5980
+      EAF1B82AE31F8E8AC471D4409C0B84DAACDD2754E3D9FA81B2A8B71F0081C211
+      6F1DED88E07F4C9F797048DCCE73856EDC780EF0D1108A1DB5EF7097581BB7FE
+      A806A539161319958DED4105080039DE35E4FC989DE78C8E82EECF103ECBFE20
+      89841591513155B6E4395EDE6C9F30D8EBF85AD10BB33FF7E31762B2309E9D05
+      BC11D3809C20D8A063F5537803404F4583DE781A61279C1606B377721E3AC528
+      59D5F01A22BD3ACA9ED800BA0B7CF7DD599ECE05C242559FA13027E2E56E4755
+      A84B8EF3958A34B4D6543C7DFAA35E0BCA20CF7D2540F99829DF4C5E2422A159
+      9EC2F4E3DF6BB82CDCCEDC713CD57085289F0F25893E5FBCEAE1BF212095D7B4
+      DBDEF3592F07646F66F8A692799E5E9DCF891780637EF20FEC307A8FA652B99E
+      E2044253294754EF89A0BD5BD099BF438CBDDA5787E83B6D8945BDC61514527C
+      FF65357AB394DFF9BEC2E608638A3BED916F457062A3530FAF017AE5F11FB24D
+      49C9820527146EF6938BFACF5C7F07A8A4029E1797D6D54FC0B30F9039950D86
+      B0A43355BF309413039D4DF59520FF1241B3A00F4C5DD9304960B21FC1A8F51D
+      93AF038E0EEF7E968069AE6A9616DDB4F8351122373DAA243B1EAFBF279342E7
+      064DA59C8EC7EBEF57688826B3B9E88645AF1B23770530DE3D32DC7DCE4F105C
+      145DDDB851E1561F91E75899F4C2D8F47B9E6BF601F99106429B0A4B8ACAAB5F
+      8CC1CD2E787A0F11D33E8B4E63F5E24B0F9891C6C82E7CFF54F94EEBF28A7FF2
+      6B1C783C2EEADDA3E2FCBD8F42C78A360C9DB7E80B1D9BEB97A1F2400C238B45
+      D9D1D954FF920A4F5A78BAA8D0FD95FC5DE6F6863EF3E0908EF79CCF88304B45
+      E68A6AF86A7F1A14BE91BFFFF0EF4A9CD14D3EB602789E092EA98586D592558D
+      4D08E5FE0DE58EE69A85EB3A520D5BB207A17DC1E1AC0D23FBD25884CD05E5D5
+      E52575C925044509D54DADB555BE0B234438A06C6572BC677437FE9E3D69AC5C
+      FAF224F6747579DB723ACCE80F082D05273A6716FFB670A2B1B21D18E4C3F28C
+      7AE3B355225F842E4E2FAFA8D823E8FA00F1606B74EBD43DFCA52B83BF9C39FC
+      1818A8F05F6E9A6B3EFFBBFC31C6CA16FC070FCADAB0C1438CD361D7357781BC
+      15201EE9587E74D55B76646177E7950A4F455A7F86106173E150E7AA99BF76CE
+      F33CE70520A840B32FDF1BB2224A5FA403DA13155D020B088CFBFA29ACF7D2B4
+      DF148C2F2CAF9A877207D9DB5FFD8C4E85C505E5D5E5C57BEC24C7EA4EE09301
+      5C57ADB935CEF5DAB8F1796A38574629E6C5D2D58DB717CEAF5AE758192BF004
+      316B0D11B0284DC6EAC545AF1F6A28A94B2EC9BEF3610BA783B171CE15A31D50
+      BA2AB948D1B531740D46646D495DE34B330EC8F082F9D5D7A9CA04944781F7E2
+      18D303EFAAB241C58C2FBCA1FA864B0F98912579A37F965DEDFDDFF93F4304D6
+      17AF4A564575121A054A57D64F51635AC9FDBB02AB2A2963BC6FB5D454BFAAA9
+      B543BB38E70AB55C91295DEB45203D776CBF27B39F6F47F4F982CEFC1DB260C1
+      89A92B1B266533BC6BFB6247D40589500714AF6EFC92C07FE6D8698F1EB44DAC
+      3C2678DB7AAEC84753C9E17AB25B3F76CB6D1F9A21D9BB09572BDC1C94DBC7EE
+      5EF8624B4DE58F03E5A1ADC3AFCA5A32EF782EDBDE830A7B10DE14E4B0428751
+      15552D149151D94ACE3872FBB6C0CDDAD07B2C31AECA46564FA72493839C239A
+      EA7D599A6AC1EE56CCBF135C823ADBD8A7D6DC8A781345A4910FBF22CF1C1D76
+      725ED465E9E830585191EE4C8F988F7C10E33D11FD6AEBF2CAC696E5D5CD9E2B
+      9311BE4DFFACF871E129DC97EF0E99D2B662615B5B6DD5C30A5FE754A8169EEA
+      744744DE14CF50E3229130A5CE982B3D63DFD95553B5B7A7389B36D7D2B7C52A
+      2E3C549B0C76B55F8657B63239DE3A3ABA257DF0F97EFD6022174CAD6B1867AC
+      2C21F3C9CCB07E527B0CE409CF706FFBB28A7EAD389FB5939CCB121BCFE9CA3B
+      718DAA2917D119E4F60DC0A96F0BB61BB5A923C3DDE7E24CE7BE60C03E9B9B9E
+      F8F65FA49DBCC9885440E08DD2AD88347AF04A7B4DC5EF07C2AE0173C02914AF
+      4E2E15D4B760AAC85D6DCB2B22AFB7F627FEDF7F39FABFE0000DD91784C9CE0E
+      423F99391B48BB43360DCEEBBE0EE87917E9E76977C8A681B6E77F008ED21DB3
+      56854C7B0000000049454E44AE426082
+    }
+    Visible = False
+  end
+  object RadioGroup1: TRadioGroup
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideBottom.Control = ApplyBtn
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 72
+    Top = 8
+    Width = 272
+    AutoFill = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    Caption = 'Mode'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 3
+    ClientHeight = 54
+    ClientWidth = 270
+    Columns = 3
+    Items.Strings = (
+      'Auto'
+      'Manual'
+      'None'
+    )
+    TabOrder = 0
+    OnClick = RadioGroup1Click
+  end
+  object Label8: TLabel
+    AnchorSideTop.Control = Edit7
+    AnchorSideTop.Side = asrCenter
+    Left = 8
+    Height = 17
+    Top = 368
+    Width = 76
+    Caption = 'Ignore hosts'
+  end
+  object Edit7: TEdit
+    AnchorSideLeft.Control = Label8
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = DefaultBtn
+    AnchorSideBottom.Control = Edit8
+    Left = 89
+    Height = 37
+    Hint = 'Comma-separated list of hosts bypassing proxy'
+    Top = 358
+    Width = 397
+    Anchors = [akLeft, akRight]
+    BorderSpacing.Left = 5
+    BorderSpacing.Bottom = 15
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+  end
+  object Edit8: TEdit
+    AnchorSideLeft.Control = Label9
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = ClearBtn
+    AnchorSideBottom.Control = StaticText1
+    Left = 149
+    Height = 37
+    Hint = 'For example: http://proxy.example.com/proxy.pac'
+    Top = 423
+    Width = 337
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Left = 5
+    BorderSpacing.Bottom = 15
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+  end
+  object Label9: TLabel
+    AnchorSideTop.Control = Edit8
+    AnchorSideTop.Side = asrCenter
+    Left = 8
+    Height = 17
+    Top = 433
+    Width = 136
+    Caption = 'Autoconfiguration URL'
+  end
+  object DefaultBtn: TSpeedButton
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Edit7
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Edit7
+    AnchorSideBottom.Side = asrBottom
+    Left = 486
+    Height = 37
+    Hint = 'Default'
+    Top = 358
+    Width = 40
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Right = 8
+    Caption = 'D'
+    ShowHint = True
+    ParentShowHint = False
+    OnClick = DefaultBtnClick
+  end
+  object ClearBtn: TSpeedButton
+    AnchorSideTop.Control = Edit8
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Edit8
+    AnchorSideBottom.Side = asrBottom
+    Left = 486
+    Height = 37
+    Hint = 'Default'
+    Top = 423
+    Width = 40
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Right = 8
+    Caption = 'D'
+    ShowHint = True
+    ParentShowHint = False
+    OnClick = ClearBtnClick
+  end
+  object XMLPropStorage1: TXMLPropStorage
+    StoredValues = <>
+    Active = False
+    Left = 448
+    Top = 128
+  end
+end

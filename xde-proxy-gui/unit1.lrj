@@ -1,0 +1,23 @@
+{"version":1,"strings":[
+{"hash":134403005,"name":"tmainform.caption","sourcebytes":[77,97,105,110,70,111,114,109],"value":"MainForm"},
+{"hash":4749113,"name":"tmainform.applybtn.caption","sourcebytes":[65,112,112,108,121],"value":"Apply"},
+{"hash":97867267,"name":"tmainform.groupbox1.caption","sourcebytes":[80,114,111,120,121,32,115,101,116,116,105,110,103,115],"value":"Proxy settings"},
+{"hash":41119593,"name":"tmainform.label1.caption","sourcebytes":[72,84,84,80,32,112,114,111,120,121],"value":"HTTP proxy"},
+{"hash":87699369,"name":"tmainform.label2.caption","sourcebytes":[72,84,84,80,83,32,112,114,111,120,121],"value":"HTTPS proxy"},
+{"hash":256872617,"name":"tmainform.label3.caption","sourcebytes":[83,79,67,75,83,45,53,32,112,114,111,120,121],"value":"SOCKS-5 proxy"},
+{"hash":358036,"name":"tmainform.label4.caption","sourcebytes":[80,111,114,116],"value":"Port"},
+{"hash":358036,"name":"tmainform.label5.caption","sourcebytes":[80,111,114,116],"value":"Port"},
+{"hash":358036,"name":"tmainform.label6.caption","sourcebytes":[80,111,114,116],"value":"Port"},
+{"hash":9225635,"name":"tmainform.checkbox2.caption","sourcebytes":[65,108,115,111,32,117,115,101,32,116,104,105,115,32,72,84,84,80,32,112,114,111,120,121,32,102,111,114,32,72,84,84,80,83],"value":"Also use this HTTP proxy for HTTPS"},
+{"hash":207453398,"name":"tmainform.statictext1.caption","sourcebytes":[76,105,99,101,110,115,101,58,32,71,80,76,118,51,32,32,32,65,117,116,104,111,114,58,32,65,75,111,116,111,118,45,100,101,118,32,40,67,41,32,50,48,50,54],"value":"License: GPLv3   Author: AKotov-dev (C) 2026"},
+{"hash":33785758,"name":"tmainform.label7.caption","sourcebytes":[119,111,114,107,105,110,103,46,46,46],"value":"working..."},
+{"hash":345509,"name":"tmainform.radiogroup1.caption","sourcebytes":[77,111,100,101],"value":"Mode"},
+{"hash":59849779,"name":"tmainform.label8.caption","sourcebytes":[73,103,110,111,114,101,32,104,111,115,116,115],"value":"Ignore hosts"},
+{"hash":117419689,"name":"tmainform.edit7.hint","sourcebytes":[67,111,109,109,97,45,115,101,112,97,114,97,116,101,100,32,108,105,115,116,32,111,102,32,104,111,115,116,115,32,98,121,112,97,115,115,105,110,103,32,112,114,111,120,121],"value":"Comma-separated list of hosts bypassing proxy"},
+{"hash":161932483,"name":"tmainform.edit8.hint","sourcebytes":[70,111,114,32,101,120,97,109,112,108,101,58,32,104,116,116,112,58,47,47,112,114,111,120,121,46,101,120,97,109,112,108,101,46,99,111,109,47,112,114,111,120,121,46,112,97,99],"value":"For example: http://proxy.example.com/proxy.pac"},
+{"hash":217513676,"name":"tmainform.label9.caption","sourcebytes":[65,117,116,111,99,111,110,102,105,103,117,114,97,116,105,111,110,32,85,82,76],"value":"Autoconfiguration URL"},
+{"hash":180128884,"name":"tmainform.defaultbtn.hint","sourcebytes":[68,101,102,97,117,108,116],"value":"Default"},
+{"hash":68,"name":"tmainform.defaultbtn.caption","sourcebytes":[68],"value":"D"},
+{"hash":180128884,"name":"tmainform.clearbtn.hint","sourcebytes":[68,101,102,97,117,108,116],"value":"Default"},
+{"hash":68,"name":"tmainform.clearbtn.caption","sourcebytes":[68],"value":"D"}
+]}

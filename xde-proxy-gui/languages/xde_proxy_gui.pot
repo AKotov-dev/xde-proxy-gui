@@ -1,0 +1,120 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tmainform.applybtn.caption
+msgctxt "tmainform.applybtn.caption"
+msgid "Apply"
+msgstr ""
+
+#: tmainform.caption
+msgid "MainForm"
+msgstr ""
+
+#: tmainform.checkbox2.caption
+msgid "Also use this HTTP proxy for HTTPS"
+msgstr ""
+
+#: tmainform.clearbtn.caption
+msgctxt "tmainform.clearbtn.caption"
+msgid "D"
+msgstr ""
+
+#: tmainform.clearbtn.hint
+msgctxt "tmainform.clearbtn.hint"
+msgid "Default"
+msgstr ""
+
+#: tmainform.defaultbtn.caption
+msgctxt "tmainform.defaultbtn.caption"
+msgid "D"
+msgstr ""
+
+#: tmainform.defaultbtn.hint
+msgctxt "tmainform.defaultbtn.hint"
+msgid "Default"
+msgstr ""
+
+#: tmainform.edit7.hint
+msgid "Comma-separated list of hosts bypassing proxy"
+msgstr ""
+
+#: tmainform.edit8.hint
+msgid "For example: http://proxy.example.com/proxy.pac"
+msgstr ""
+
+#: tmainform.groupbox1.caption
+msgid "Proxy settings"
+msgstr ""
+
+#: tmainform.label1.caption
+msgid "HTTP proxy"
+msgstr ""
+
+#: tmainform.label2.caption
+msgid "HTTPS proxy"
+msgstr ""
+
+#: tmainform.label3.caption
+msgid "SOCKS-5 proxy"
+msgstr ""
+
+#: tmainform.label4.caption
+msgctxt "tmainform.label4.caption"
+msgid "Port"
+msgstr ""
+
+#: tmainform.label5.caption
+msgctxt "tmainform.label5.caption"
+msgid "Port"
+msgstr ""
+
+#: tmainform.label6.caption
+msgctxt "tmainform.label6.caption"
+msgid "Port"
+msgstr ""
+
+#: tmainform.label7.caption
+msgid "working..."
+msgstr ""
+
+#: tmainform.label8.caption
+msgid "Ignore hosts"
+msgstr ""
+
+#: tmainform.label9.caption
+msgid "Autoconfiguration URL"
+msgstr ""
+
+#: tmainform.radiogroup1.caption
+msgid "Mode"
+msgstr ""
+
+#: tmainform.statictext1.caption
+msgid "License: GPLv3   Author: AKotov-dev (C) 2026"
+msgstr ""
+
+#: unit1.slxdeconfmsg
+msgid ""
+"LXDE:\n"
+"\n"
+"XDG_CURRENT_DESKTOP=GNOME:LXDE will be added to the [Environment_variable] section of the ~/.config/lxsession/LXDE/desktop.conf file. You will then need to log out or reboot your computer. \n"
+"\n"
+"Are you sure you want to make changes?"
+msgstr ""
+
+#: unit1.smodeauto
+msgid "Auto"
+msgstr ""
+
+#: unit1.smodemanual
+msgid "Manual"
+msgstr ""
+
+#: unit1.smodenone
+msgid "None"
+msgstr ""
+
+#: unit1.snoutils
+msgid "gsettings or dconf not found!"
+msgstr ""
+

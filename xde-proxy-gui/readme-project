@@ -1,0 +1,30 @@
+XFCE-Proxy-GUI
+---
+Зависимости:
+RPM (Mageia): gsettings-desktop-schemas dconf dconf-editor lib64proxy-gnome gtk2
+RPM (Fedora): gsettings-desktop-schemas dconf dconf-editor libproxy gtk2
+XUbuntu: gsettings-desktop-schemas dconf-cli libproxy1v5 libproxy1-plugin-gsettings libgtk2.0-0
+
+Примечание: Пакеты собраны методом Portable RPM с помощью [RPMCreator](https://github.com/AKotov-dev/RPMCreator) для Mageia-9/10. Для Ubuntu и Fedora можете собрать свой пакет через загрузку файла проекта в RPMCreator. dconf-editor не обязателен, однако это удобный инструмент контроля реальных параметров прокси, если появится желание дальнейшего развития проекта.
+
+Что это то такое
+---
+XFCE-Proxy-GUI позволяет менять системный прокси налету для GUI-приложений (браузеры и т.п.) и консоли (после повторного открытия терминала; wget, etc...). Используются libproxy и dconf/gsettings. Результат - system-wide прокси как GNOME или MATE.
+
+Как это работает:
+--
+Файл /etc/profile.d/proxy-sync.sh
+Основная фишка - это подбрасывание фиктивного XDG_CURRENT_DESKTOP: `export XDG_CURRENT_DESKTOP=GNOME`. После этого получаем полноценную работу с libproxy, что позволяет менять прокси налету в GUI-приложениях, например в браузерах. Инструкции `export xxxx_proxy="xxxx://$host:$port"` нужны для обновления параметров прокси в терминале (после смены прокси нужно открыть новый терминал, чтобы принять настройки). 
+
+Важный момент: после установки или удаления пакета нужно перезайти в систему или перезагрузиться. После этого инструмент работает постоянно.
+
+Дополнительно:
+---
+В процессе работы XFCE-Proxy-GUI создайт дополнительную строку кода в ~/.bashrc
+```
+[ -r /etc/profile.d/proxy-sync.sh ] && source /etc/profile.d/proxy-sync.sh
+```
+Она нужна для XUbuntu, поскольку поведение этой системы почему-то отличается от канонического (Mageia, Fedora).
+
+Тестирование проводилось на VM XUbuntu-25.04, Mageia-9/10 (XFCE), Fedora-43 (XFCE).
+

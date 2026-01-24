@@ -1,0 +1,68 @@
+[NAME]
+name=xde-proxy-gui
+
+[VERSION]
+version=0.1
+
+[RELEASE]
+release=0.mrx10
+
+[GROUP]
+group=System/Configuration
+
+[DESCRIPTION]
+0=Lightweight proxy manager with GNOME-compatible live switching for XDE (XFCE, LXDE)
+1=---
+2=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2026
+
+[SUMMARY]
+summary=XFCE and LXDE system-wide proxy GUI
+
+[URLCOPY]
+urlcopy=https://github.com/AKotov-dev/xde-proxy-gui
+
+[LICENSE]
+license=GPLv3
+
+[DEPS]
+deps=gsettings-desktop-schemas dconf dconf-editor lib64proxy-gnome gtk2
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=0
+
+[DEB]
+deb=0
+
+[FILES]
+0=/etc/profile.d/proxy-sync.sh
+1=/usr/share/icons/xde-proxy-gui.png
+2=/usr/share/applications/xde-proxy-gui.desktop
+3=/usr/share/xde-proxy-gui/
+4=/usr/share/doc/xde-proxy-gui/
+
+[URL32]
+url32=https://github.com/AKotov-dev/xde-proxy-gui
+
+[PROGRAMNAME]
+programname=XDE-Proxy-GUI
+
+[DEVTOOL]
+devtool=Lazarus
+
+[TOOLVERSION]
+toolversion=4.4
+
+[INFO]
+0=V0.1
+1=+ Combined XDG_CURRENT_DESKTOP
+2=+ Full compatibility with XFCE and LXDE
+3=+ DEB package for XUbuntu-25.04

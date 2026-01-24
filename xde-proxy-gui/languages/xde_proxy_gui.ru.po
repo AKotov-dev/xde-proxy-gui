@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+#: tmainform.applybtn.caption
+msgctxt "tmainform.applybtn.caption"
+msgid "Apply"
+msgstr "Применить"
+
+#: tmainform.caption
+msgid "MainForm"
+msgstr ""
+
+#: tmainform.checkbox2.caption
+msgid "Also use this HTTP proxy for HTTPS"
+msgstr "Также использовать этот прокси для HTTPS"
+
+#: tmainform.clearbtn.caption
+msgctxt "tmainform.clearbtn.caption"
+msgid "D"
+msgstr ""
+
+#: tmainform.clearbtn.hint
+msgctxt "tmainform.clearbtn.hint"
+msgid "Default"
+msgstr "По умолчанию"
+
+#: tmainform.defaultbtn.caption
+msgctxt "tmainform.defaultbtn.caption"
+msgid "D"
+msgstr ""
+
+#: tmainform.defaultbtn.hint
+msgctxt "tmainform.defaultbtn.hint"
+msgid "Default"
+msgstr "По умолчанию"
+
+#: tmainform.edit7.hint
+msgid "Comma-separated list of hosts bypassing proxy"
+msgstr "Список хостов, разделенных запятыми, обходящих прокси-сервер"
+
+#: tmainform.edit8.hint
+msgid "For example: http://proxy.example.com/proxy.pac"
+msgstr "Например: http://proxy.example.com/proxy.pac"
+
+#: tmainform.groupbox1.caption
+msgid "Proxy settings"
+msgstr "Настройки прокси"
+
+#: tmainform.label1.caption
+msgid "HTTP proxy"
+msgstr "HTTP прокси"
+
+#: tmainform.label2.caption
+msgid "HTTPS proxy"
+msgstr "HTTPS прокси"
+
+#: tmainform.label3.caption
+msgid "SOCKS-5 proxy"
+msgstr "SOCKS-5 прокси"
+
+#: tmainform.label4.caption
+msgctxt "tmainform.label4.caption"
+msgid "Port"
+msgstr "Порт"
+
+#: tmainform.label5.caption
+msgctxt "tmainform.label5.caption"
+msgid "Port"
+msgstr "Порт"
+
+#: tmainform.label6.caption
+msgctxt "tmainform.label6.caption"
+msgid "Port"
+msgstr "Порт"
+
+#: tmainform.label7.caption
+msgid "working..."
+msgstr "работаю..."
+
+#: tmainform.label8.caption
+msgid "Ignore hosts"
+msgstr "Игнорировать узлы"
+
+#: tmainform.label9.caption
+msgid "Autoconfiguration URL"
+msgstr "URL автоконфигурации"
+
+#: tmainform.radiogroup1.caption
+msgid "Mode"
+msgstr "Режим"
+
+#: tmainform.statictext1.caption
+msgid "License: GPLv3   Author: AKotov-dev (C) 2026"
+msgstr "Лицензия: GPLv3   Автор: AKotov-dev (C) 2026"
+
+#: unit1.slxdeconfmsg
+#, fuzzy
+#| msgid ""
+#| "LXDE:\n"
+#| "\n"
+#| "XDG_CURRENT_DESKTOP=GNOME will be added to the [Environment_variable] section of the ~/.config/lxsession/LXDE/desktop.conf file. You will then need to log out or reboot your computer. \n"
+#| "\n"
+#| "Are you sure you want to make changes?"
+msgid ""
+"LXDE:\n"
+"\n"
+"XDG_CURRENT_DESKTOP=GNOME:LXDE will be added to the [Environment_variable] section of the ~/.config/lxsession/LXDE/desktop.conf file. You will then need to log out or reboot your computer. \n"
+"\n"
+"Are you sure you want to make changes?"
+msgstr ""
+"LXDE:\n"
+"\n"
+"В файл ~/.config/lxsession/LXDE/desktop.conf\n"
+"в секцию [Environment_variable] будет добавлено  XDG_CURRENT_DESKTOP=GNOME. После этого потребуется перезайти в систему или перезагрузить компьютер.\n"
+"\n"
+"Внести изменения?"
+
+#: unit1.smodeauto
+msgid "Auto"
+msgstr "Авто"
+
+#: unit1.smodemanual
+msgid "Manual"
+msgstr "Ручной"
+
+#: unit1.smodenone
+msgid "None"
+msgstr "Выкл"
+
+#: unit1.snoutils
+msgid "gsettings or dconf not found!"
+msgstr "gsettings или dconf не найдены!"
+
