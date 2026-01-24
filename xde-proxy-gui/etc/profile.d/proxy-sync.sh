@@ -1,9 +1,12 @@
 # proxy-sync.sh — синхронизация CLI с gsettings для текущего пользователя
 
 # Только для этих DE
-case "$XDG_CURRENT_DESKTOP" in
-    *XFCE*|*LXDE*) ;;
-    *) return ;;
+case "${XDG_CURRENT_DESKTOP,,}" in
+  *lxde*|*lxqt*|*xfce*)
+    ;;
+  *)
+    return
+    ;;
 esac
 
 # gsettings есть только в пользовательской сессии
