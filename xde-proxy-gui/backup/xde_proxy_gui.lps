@@ -39,7 +39,6 @@
       <Unit>
         <Filename Value="xde_proxy_gui.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="24"/>
         <UsageCount Value="46"/>
         <Loaded Value="True"/>
@@ -51,8 +50,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="12"/>
+        <CursorPos X="13"/>
         <UsageCount Value="46"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
