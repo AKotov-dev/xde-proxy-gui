@@ -2,7 +2,7 @@
 
 # Только для этих DE
 case "${XDG_CURRENT_DESKTOP,,}" in
-  *lxde*|*lxqt*|*xfce*)
+  *xfce*|*lxde*|*lxqt*|*icewm*|*openbox*)
     ;;
   *)
     return

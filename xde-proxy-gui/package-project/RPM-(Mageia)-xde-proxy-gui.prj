@@ -2,7 +2,7 @@
 name=xde-proxy-gui
 
 [VERSION]
-version=0.1
+version=0.2
 
 [RELEASE]
 release=0.mrx10
@@ -62,7 +62,11 @@ devtool=Lazarus
 toolversion=4.4
 
 [INFO]
-0=V0.1
-1=+ Combined XDG_CURRENT_DESKTOP
-2=+ Full compatibility with XFCE and LXDE
-3=+ DEB package for XUbuntu-25.04
+0=v0.2
+1=+ Optional support for IceWM and Openbox
+2=+ DEB package for XUbuntu-25.04
+3=
+4=V0.1
+5=+ Combined XDG_CURRENT_DESKTOP
+6=+ Full compatibility with XFCE and LXDE
+7=+ DEB package for XUbuntu-25.04
