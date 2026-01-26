@@ -18,7 +18,7 @@ Lightweight proxy manager with GNOME-compatible live switching for XDE (XFCE, LX
 **Note:**  
 Packages for Mageia 9/10 are built using the *Portable RPM* approach with [RPMCreator](https://github.com/AKotov-dev/RPMCreator).  
   
-For Fedora you can build your own package by loading the [project file](https://github.com/AKotov-dev/xfce-proxy-gui/blob/main/xfce-proxy-gui/package-project/RPM-(Fedora)-xfce-proxy-gui.prj) into `RPMCreator`.  
+For Fedora you can build your own package by loading the [project file](https://github.com/AKotov-dev/xde-proxy-gui/blob/main/xfce-proxy-gui/package-project/RPM-(Fedora)-xfce-proxy-gui.prj) into `RPMCreator`.  
   
 `dconf-editor` is **not required**, but it is a convenient tool for inspecting the actual proxy settings and may be useful for further development.
 
