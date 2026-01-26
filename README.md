@@ -114,8 +114,8 @@ Add the following line: `DesktopNames=Openbox`
 #### i3
 In i3, the `DesktopNames` parameter is usually already set.
 
-Check the file: `/usr/share/xsessions/i3.desktop`  
-It should contain, for example: `DesktopNames=ICEWM`
+Check the files: `/usr/share/xsessions/{i3.desktop,i3-with-shmlog.desktop}`  
+It should contain, for example: `DesktopNames=i3`
 
 ---
 ## Disclaimer
