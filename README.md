@@ -92,6 +92,21 @@ LXQt forcibly sets certain desktop environment variables (including XDG_CURRENT_
 Because of this, it is not possible to reliably inject or override environment-based configuration (such as system-wide proxy settings) for the entire LXQt graphical session without patching or replacing LXQt startup scripts.
 
 ---
+### Optional (for those who prefer something more exotic)
+
+Starting with `xde-proxy-gui v0.2`, it also works in the IceWM and Openbox window managers (provided that the session correctly declares `DesktopNames`).
+
+#### IceWM
+In IceWM, the `DesktopNames` parameter is usually already set.
+
+Check the file: `/usr/share/xsessions/icewm-session.desktop`
+It should contain, for example: `DesktopNames=ICEWM`
+
+#### Openbox
+For Openbox, the `DesktopNames` parameter may be missing and must be specified manually.
+Session file: `/usr/share/xsessions/openbox.desktop`
+
+---
 ## Disclaimer
 
 This project was created to address the long-standing absence of a convenient system-wide proxy solution in lightweight desktop environments such as XFCE and LXDE.  
