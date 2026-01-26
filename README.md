@@ -4,7 +4,7 @@ Lightweight proxy manager with GNOME-compatible live switching.
   
 **Supported environments**
 - XDE (XFCE, LXDE) — officially supported
-- Optional WM support — IceWM, Openbox (requires `DesktopNames` setting)
+- Optional WM support — IceWM, Openbox, i3 (requires `DesktopNames` setting)
 
 ![](https://github.com/AKotov-dev/xde-proxy-gui/blob/main/Screenshot1.png)
 
@@ -54,7 +54,7 @@ After installing or removing the package, you must log out and log in again (or 
 The key idea is exporting a **fake desktop identifier**:
 
 ```
-export XDG_CURRENT_DESKTOP="GNOME:${XDG_CURRENT_DESKTOP:+$XDG_CURRENT_DESKTOP}"
+export XDG_CURRENT_DESKTOP="GNOME:${XDG_CURRENT_DESKTOP}"
 ```
 This enables full interaction with `libproxy` via `gsettings`, allowing GUI
 applications (for example, web browsers) to react to proxy changes immediately.
@@ -110,6 +110,12 @@ It should contain, for example: `DesktopNames=ICEWM`
 For Openbox, the `DesktopNames` parameter may be missing and must be specified manually.  
 Session file: `/usr/share/xsessions/openbox.desktop`  
 Add the following line: `DesktopNames=Openbox`
+
+#### i3
+In i3, the `DesktopNames` parameter is usually already set.
+
+Check the file: `/usr/share/xsessions/i3.desktop`  
+It should contain, for example: `DesktopNames=ICEWM`
 
 ---
 ## Disclaimer
