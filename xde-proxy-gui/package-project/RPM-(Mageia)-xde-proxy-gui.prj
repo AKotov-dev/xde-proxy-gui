@@ -2,7 +2,7 @@
 name=xde-proxy-gui
 
 [VERSION]
-version=0.2
+version=0.3
 
 [RELEASE]
 release=0.mrx10
@@ -62,14 +62,19 @@ devtool=Lazarus
 toolversion=4.4
 
 [INFO]
-0=v0.2
-1=+ Optional support for IceWM and Openbox
+0=v0.3
+1=+ Optional support for i3 wm
 2=+ RPM packages for Mageia-9/10
 3=+ DEB package for XUbuntu-25.04
 4=
-5=**Note:** В Mageia-10 пакет зависимостей
-6=
-7=V0.1
-8=+ Combined XDG_CURRENT_DESKTOP
-9=+ Full compatibility with XFCE and LXDE
-10=+ DEB package for XUbuntu-25.04
+5=v0.2
+6=+ Optional support for IceWM and Openbox
+7=+ RPM packages for Mageia-9/10
+8=+ DEB package for XUbuntu-25.04
+9=
+10=**Note:** В Mageia-10 пакет зависимостей
+11=
+12=V0.1
+13=+ Combined XDG_CURRENT_DESKTOP
+14=+ Full compatibility with XFCE and LXDE
+15=+ DEB package for XUbuntu-25.04

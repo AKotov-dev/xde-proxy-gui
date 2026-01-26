@@ -2,7 +2,7 @@
 
 # Только для этих DE
 case "${XDG_CURRENT_DESKTOP,,}" in
-  *xfce*|*lxde*|*lxqt*|*icewm*|*openbox*)
+  *xfce*|*lxde*|*lxqt*|*icewm*|*openbox*|*i3*)
     ;;
   *)
     return
@@ -17,7 +17,7 @@ command -v gsettings >/dev/null 2>&1 || return
 
 # Добавляем GNOME в XDG_CURRENT_DESKTOP, если его там нет
 if [[ "$XDG_CURRENT_DESKTOP" != *GNOME* ]]; then
-  export XDG_CURRENT_DESKTOP="GNOME:${XDG_CURRENT_DESKTOP:+$XDG_CURRENT_DESKTOP}"
+  export XDG_CURRENT_DESKTOP="GNOME:${XDG_CURRENT_DESKTOP}"
 fi
 
 # Очистить все переменные прокси
