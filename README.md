@@ -104,7 +104,7 @@ It should contain, for example: `DesktopNames=ICEWM`
 
 #### Openbox
 For Openbox, the `DesktopNames` parameter may be missing and must be specified manually.  
-Session file: `/usr/share/xsessions/openbox.desktop`
+Session file: `/usr/share/xsessions/openbox.desktop`  
 Add the following line: `DesktopNames=Openbox`
 
 ---
