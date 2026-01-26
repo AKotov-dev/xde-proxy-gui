@@ -2,7 +2,7 @@
 
 ![](https://github.com/AKotov-dev/xde-proxy-gui/blob/main/Screenshot1.png)
 
-Lightweight proxy manager with GNOME-compatible live switching for XDE (XFCE, LXDE).
+Lightweight proxy manager with GNOME-compatible live switching for XDE (XFCE, LXDE) and some WMs (IceWM, Openbox).
 
 ## Dependencies
 
