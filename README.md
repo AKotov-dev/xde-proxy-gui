@@ -99,11 +99,11 @@ Starting with `xde-proxy-gui v0.2`, it also works in the IceWM and Openbox windo
 #### IceWM
 In IceWM, the `DesktopNames` parameter is usually already set.
 
-Check the file: `/usr/share/xsessions/icewm-session.desktop`
+Check the file: `/usr/share/xsessions/icewm-session.desktop`  
 It should contain, for example: `DesktopNames=ICEWM`
 
 #### Openbox
-For Openbox, the `DesktopNames` parameter may be missing and must be specified manually.
+For Openbox, the `DesktopNames` parameter may be missing and must be specified manually.  
 Session file: `/usr/share/xsessions/openbox.desktop`
 
 ---
