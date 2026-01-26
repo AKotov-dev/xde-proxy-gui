@@ -4,7 +4,7 @@ Lightweight proxy manager with GNOME-compatible live switching.
   
 **Supported environments**
 - XDE (XFCE, LXDE) — officially supported
-- Optional WM support — IceWM, Openbox (requires DesktopNames setting)
+- Optional WM support — IceWM, Openbox (requires `DesktopNames` setting)
 
 ![](https://github.com/AKotov-dev/xde-proxy-gui/blob/main/Screenshot1.png)
 
