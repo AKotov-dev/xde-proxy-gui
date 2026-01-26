@@ -50,7 +50,7 @@ After installing or removing the package, you must log out and log in again (or 
 The key idea is exporting a **fake desktop identifier**:
 
 ```
-export XDG_CURRENT_DESKTOP="${XDG_CURRENT_DESKTOP:+$XDG_CURRENT_DESKTOP:}GNOME"
+export XDG_CURRENT_DESKTOP="GNOME:${XDG_CURRENT_DESKTOP:+$XDG_CURRENT_DESKTOP}"
 ```
 This enables full interaction with `libproxy` via `gsettings`, allowing GUI
 applications (for example, web browsers) to react to proxy changes immediately.
