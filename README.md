@@ -112,7 +112,7 @@ Session file: `/usr/share/xsessions/openbox.desktop`
 Add the following line: `DesktopNames=Openbox`
 
 #### i3
-In i3, the `DesktopNames` parameter is usually already set.
+In i3, the `DesktopNames` parameter is usually already set (i3.desktop).
 
 Check the files: `/usr/share/xsessions/{i3.desktop,i3-with-shmlog.desktop}`  
 It should contain, for example: `DesktopNames=i3`
