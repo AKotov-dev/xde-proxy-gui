@@ -98,7 +98,7 @@ Because of this, it is not possible to reliably inject or override environment-b
 ---
 ### Optional (for those who prefer something more exotic)
 
-Starting with **xde-proxy-gui v0.2**, the application also works with the **IceWM** and **Openbox** window managers, provided that the session correctly declares `DesktopNames`.
+Starting with **xde-proxy-gui v0.3**, the application also works with the **IceWM**, **Openbox** and **i3** window managers, provided that the session correctly declares `DesktopNames`.
 
 #### IceWM
 In IceWM, the `DesktopNames` parameter is usually already set.
