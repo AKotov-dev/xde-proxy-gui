@@ -85,7 +85,7 @@ XDG_CURRENT_DESKTOP=GNOME:LXDE
 ---
 ### Tested on
 + Mageia 9 / 10 (XFCE, LXDE, Chromium, wget, etc)
-+ Fedora 43 (XFCE, Brave-browser, wget, etc)
++ Fedora 43 (XFCE, LXDE, Brave-browser, wget, etc)
 + XUbuntu 25.04 (XFCE, Brave-browser, wget, etc)
 
 ---
