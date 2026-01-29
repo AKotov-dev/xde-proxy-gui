@@ -63,7 +63,7 @@ toolversion=4.4
 
 [INFO]
 0=v0.4
-1=+ Cosmetic code changes
+1=+ Enter - Apply, Esc - Close
 2=+ RPM packages for Mageia-9/10
 3=+ DEB package for XUbuntu-25.04
 4=

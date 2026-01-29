@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, StdCtrls,
-  Process, DefaultTranslator, XMLPropStorage, ExtCtrls, IniFiles;
+  Process, DefaultTranslator, XMLPropStorage, ExtCtrls, IniFiles, LCLType;
 
 type
 
@@ -44,6 +44,7 @@ type
     procedure Edit1Change(Sender: TObject);
     procedure Edit4KeyPress(Sender: TObject; var Key: char);
     procedure FormCreate(Sender: TObject);
+    procedure FormKeyUp(Sender: TObject; var Key: word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure ApplyBtnClick(Sender: TObject);
     procedure RadioGroup1Click(Sender: TObject);
@@ -292,6 +293,15 @@ begin
     Application.Icon.Assign(bmp);
   finally
     bmp.Free;
+  end;
+end;
+
+//Обработка нажатия кнопок
+procedure TMainForm.FormKeyUp(Sender: TObject; var Key: word; Shift: TShiftState);
+begin
+  case Key of
+    VK_RETURN: ApplyBtn.Click;
+    VK_Escape: Close;
   end;
 end;
 

@@ -7,9 +7,11 @@ object MainForm: TMainForm
   Caption = 'MainForm'
   ClientHeight = 493
   ClientWidth = 534
+  KeyPreview = True
   SessionProperties = 'Height;Left;Top;Width'
   LCLVersion = '4.4.0.0'
   OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
   OnShow = FormShow
   object ApplyBtn: TSpeedButton
     AnchorSideTop.Control = Owner
