@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 300
+  Left = 312
   Height = 493
-  Top = 126
+  Top = 128
   Width = 534
   ActiveControl = Edit1
   Caption = 'MainForm'

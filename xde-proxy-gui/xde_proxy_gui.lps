@@ -57,7 +57,7 @@
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="unit1.pas"/>
         <Caret Line="240" Column="13" TopLine="233"/>
@@ -173,10 +173,6 @@
       <Position>
         <Filename Value="unit1.pas"/>
         <Caret Line="165" Column="54" TopLine="149"/>
-      </Position>
-      <Position>
-        <Filename Value="unit1.pas"/>
-        <Caret Column="13"/>
       </Position>
     </JumpHistory>
     <RunParams>

@@ -17,7 +17,7 @@ uses
 
 begin
   RequireDerivedFormResource := True;
-  Application.Title:='XDE-Proxy-GUI v0.3';
+  Application.Title:='XDE-Proxy-GUI v0.4';
   Application.Scaled:=True;
   {$PUSH}
   {$WARN 5044 OFF}

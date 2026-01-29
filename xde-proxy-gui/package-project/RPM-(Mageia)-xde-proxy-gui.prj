@@ -2,7 +2,7 @@
 name=xde-proxy-gui
 
 [VERSION]
-version=0.3
+version=0.4
 
 [RELEASE]
 release=0.mrx10
@@ -22,7 +22,7 @@ maintainer=Alex Kotov
 vendor=alex_q_2000 (C) 2026
 
 [SUMMARY]
-summary=XFCE and LXDE system-wide proxy GUI
+summary=Proxy manager for XFCE and LXDE
 
 [URLCOPY]
 urlcopy=https://github.com/AKotov-dev/xde-proxy-gui
@@ -62,21 +62,26 @@ devtool=Lazarus
 toolversion=4.4
 
 [INFO]
-0=v0.3
-1=+ Optional support for i3 wm
+0=v0.4
+1=+ Cosmetic code changes
 2=+ RPM packages for Mageia-9/10
 3=+ DEB package for XUbuntu-25.04
 4=
-5=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
-6=
-7=v0.2
-8=+ Optional support for IceWM and Openbox
-9=+ RPM packages for Mageia-9/10
-10=+ DEB package for XUbuntu-25.04
+5=v0.3
+6=+ Optional support for i3 wm
+7=+ RPM packages for Mageia-9/10
+8=+ DEB package for XUbuntu-25.04
+9=
+10=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
 11=
-12=**Note:** В Mageia-10 пакет зависимостей
-13=
-14=V0.1
-15=+ Combined XDG_CURRENT_DESKTOP
-16=+ Full compatibility with XFCE and LXDE
-17=+ DEB package for XUbuntu-25.04
+12=v0.2
+13=+ Optional support for IceWM and Openbox
+14=+ RPM packages for Mageia-9/10
+15=+ DEB package for XUbuntu-25.04
+16=
+17=**Note:** В Mageia-10 пакет зависимостей
+18=
+19=V0.1
+20=+ Combined XDG_CURRENT_DESKTOP
+21=+ Full compatibility with XFCE and LXDE
+22=+ DEB package for XUbuntu-25.04
