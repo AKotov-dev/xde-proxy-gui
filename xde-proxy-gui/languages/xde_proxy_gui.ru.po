@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 
 #: tmainform.applybtn.caption
 msgctxt "tmainform.applybtn.caption"
@@ -104,13 +104,7 @@ msgid "License: GPLv3   Author: AKotov-dev (C) 2026"
 msgstr "Лицензия: GPLv3   Автор: AKotov-dev (C) 2026"
 
 #: unit1.slxdeconfmsg
-#, fuzzy
-#| msgid ""
-#| "LXDE:\n"
-#| "\n"
-#| "XDG_CURRENT_DESKTOP=GNOME will be added to the [Environment_variable] section of the ~/.config/lxsession/LXDE/desktop.conf file. You will then need to log out or reboot your computer. \n"
-#| "\n"
-#| "Are you sure you want to make changes?"
+msgctxt "unit1.slxdeconfmsg"
 msgid ""
 "LXDE:\n"
 "\n"
@@ -121,7 +115,23 @@ msgstr ""
 "LXDE:\n"
 "\n"
 "В файл ~/.config/lxsession/LXDE/desktop.conf\n"
-"в секцию [Environment_variable] будет добавлено  XDG_CURRENT_DESKTOP=GNOME. После этого потребуется перезайти в систему или перезагрузить компьютер.\n"
+"в секцию [Environment_variable] будет добавлено  XDG_CURRENT_DESKTOP=GNOME:LXDE. После этого нужно перезайти в систему или перезагрузить компьютер.\n"
+"\n"
+"Внести изменения?"
+
+#: unit1.slxqtconfmsg
+msgctxt "unit1.slxqtconfmsg"
+msgid ""
+"LXQt:\n"
+"\n"
+"XDG_CURRENT_DESKTOP=GNOME:LXQt will be added to the [Environment] section of the ~/.config/lxqt/session.conf file. You will then need to reboot your computer. \n"
+"\n"
+"Are you sure you want to make changes?"
+msgstr ""
+"LXQt:\n"
+"\n"
+"В файл ~/.config/lxqt/session.conf\n"
+"в секцию [Environment] будет добавлено  XDG_CURRENT_DESKTOP=GNOME:LXQt. После этого нужно перезагрузить компьютер.\n"
 "\n"
 "Внести изменения?"
 
@@ -140,4 +150,3 @@ msgstr "Выкл"
 #: unit1.snoutils
 msgid "gsettings or dconf not found!"
 msgstr "gsettings или dconf не найдены!"
-

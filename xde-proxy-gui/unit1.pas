@@ -73,6 +73,12 @@ resourcestring
     'You will then need to log out or reboot your computer. ' + #13#10 +
     #13#10 + 'Are you sure you want to make changes?';
 
+  SLXQtConfMsg =
+    'LXQt:' + #13#13 + 'XDG_CURRENT_DESKTOP=GNOME:LXQt will be added to the [Environment] '
+    + 'section of the ~/.config/lxqt/session.conf file. ' +
+    'You will then need to reboot your computer. ' + #13#10 + #13#10 +
+    'Are you sure you want to make changes?';
+
 implementation
 
 {$R *.lfm}
@@ -99,15 +105,13 @@ end;
 //Если есть LXDE - вставка окружения в пользовательские настройки
 procedure EnsureLXDEDesktopEnv;
 var
-  SystemConf: string;
   UserConfDir: string;
   UserConfFile: string;
   Ini: TIniFile;
 begin
   // 1. Проверка наличия LXDE в системе
-  SystemConf := '/etc/xdg/lxsession/LXDE/desktop.conf';
-  if not FileExists(SystemConf) then
-    Exit; // LXDE не установлен — ничего не делаем
+  if Pos('lxde', LowerCase(GetEnvironmentVariable('XDG_CURRENT_DESKTOP'))) = 0 then
+    Exit;
 
   // 2. Пути пользователя
   UserConfDir := GetEnvironmentVariable('HOME') + '/.config/lxsession/LXDE';
@@ -127,6 +131,39 @@ begin
         Ini.WriteString('Environment_variable',
           'XDG_CURRENT_DESKTOP',
           'GNOME:LXDE');
+  finally
+    Ini.Free;
+  end;
+end;
+
+// Если есть LXQt - вставка окружения в пользовательские настройки
+procedure EnsureLXQtDesktopEnv;
+var
+  UserConfDir: string;
+  UserConfFile: string;
+  Ini: TIniFile;
+begin
+  // 1. Проверка наличия LXQt в системе
+  if Pos('lxqt', LowerCase(GetEnvironmentVariable('XDG_CURRENT_DESKTOP'))) = 0 then
+    Exit;
+
+  // 2. Пути пользователя
+  UserConfDir := GetEnvironmentVariable('HOME') + '/.config/lxqt';
+  UserConfFile := UserConfDir + '/session.conf';
+
+  // 3. Создаём каталог при необходимости
+  if not DirectoryExists(UserConfDir) then
+    ForceDirectories(UserConfDir);
+
+  // 4. Работаем с ini-файлом; вставляем секцию с запросом на relogin
+  Ini := TIniFile.Create(UserConfFile);
+  try
+    if Ini.ReadString('Environment', 'XDG_CURRENT_DESKTOP', '') <> 'GNOME:LXQt' then
+      if MessageDlg(SLXQtConfMsg, mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+        // 5. Фиксируем комбинированный XDG_CURRENT_DESKTOP
+        Ini.WriteString('Environment',
+          'XDG_CURRENT_DESKTOP',
+          'GNOME:LXQt');
   finally
     Ini.Free;
   end;
@@ -178,9 +215,14 @@ begin
   RunCommand('/bin/bash', ['-c',
     'grep -qxF ''[ -r /etc/profile.d/proxy-sync.sh ] && source /etc/profile.d/proxy-sync.sh'' ~/.bashrc || echo ''[ -r /etc/profile.d/proxy-sync.sh ] && source /etc/profile.d/proxy-sync.sh'' >> ~/.bashrc'], S);
 
-  //LXDE? Экспорт XDG_CURRENT_DESKTOP=GNOME через ~/.config/lxsession/LXDE/desktop.conf
+  //LXDE? Экспорт XDG_CURRENT_DESKTOP=GNOME:LXDE через ~/.config/lxsession/LXDE/desktop.conf
   //https://github.com/lxde/lxsession/blob/master/data/desktop.conf.example
+  //Сессия должна быть активной
   EnsureLXDEDesktopEnv;
+
+  //LXQt? Экспорт XDG_CURRENT_DESKTOP=GNOME:LXQt через ~/.config/lxqt/session.conf
+  //Сессия должна быть активной
+  EnsureLXQtDesktopEnv;
 
   //Use same proxy
   if CheckBox2.Checked then
