@@ -3,7 +3,8 @@
 Lightweight proxy manager with GNOME-compatible live switching.  
   
 **Supported environments**
-- XFCE and LXDE — officially supported
+- X11 (not Wayland)
+- XFCE, LXDE and LXQt — officially supported
 - Optional WM support — IceWM, Openbox, i3 (requires `DesktopNames` setting)
 
 ![](https://github.com/AKotov-dev/xde-proxy-gui/blob/main/Screenshot1.png)
@@ -39,7 +40,6 @@ It allows changing proxy settings:
 The tool uses **libproxy** together with **dconf / gsettings**, providing
 GNOME/MATE-like system-wide proxy behavior on XFCE and LXDE.  
   
-Unlike `Chromium-based` browsers, `Firefox` does not support **system-wide proxy** settings on Linux. Firefox uses its own proxy configuration and must be configured separately (for example, via `about:preferences → Network Settings` or using environment variables for specific launches).
 
 ---
 ### Important note
@@ -89,13 +89,7 @@ XDG_CURRENT_DESKTOP=GNOME:LXDE
 + XUbuntu 25.04 (XFCE, Brave-browser, wget, etc)
 
 ---
-### LXQt limitation
 
-LXQt forcibly sets certain desktop environment variables (including XDG_CURRENT_DESKTOP) in its session startup scripts (startlxqt / lxqt-session), overriding any values defined in user profiles, system-wide environment configuration, or display manager scripts.  
-  
-Because of this, it is not possible to reliably inject or override environment-based configuration (such as system-wide proxy settings) for the entire LXQt graphical session without patching or replacing LXQt startup scripts.
-
----
 ### Optional (for those who prefer something more exotic)
 
 Starting with **xde-proxy-gui v0.3**, the application also works with the **IceWM**, **Openbox** and **i3** window managers, provided that the session correctly declares `DesktopNames`.
