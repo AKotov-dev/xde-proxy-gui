@@ -44,7 +44,8 @@ GNOME/MATE-like system-wide proxy behavior on XFCE, LXDE and LXQt.
 ---
 ### Important note
 
-After installing or removing the package, you must log out and log in again (or reboot). Once this is done, the tool works continuously.
+- To implement the system proxy function, you need to click the "Apply" button at least once.
+- After installing or removing the package, you must log out and log in again (or reboot). Once this is done, the tool works continuously.
 
 ---
 ## How does it work?
@@ -84,6 +85,20 @@ An additional section is created for **LXQt** in ~/.config/lxqt/session.conf:
 ```
 [Environment]
 XDG_CURRENT_DESKTOP=GNOME:LXDE
+```
+Layered diagram
+```
+GUI
+ │
+ ├── gsettings/libproxy
+ │      ↑
+ │   proxy-sync.sh
+ │
+ └── CLI environment
+        ↑
+   xde-proxy-env.sh
+        ↑
+   proxy-env.sh
 ```
 
 ---
