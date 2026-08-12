@@ -103,9 +103,9 @@ GUI
 
 ---
 ### Tested on
-+ Mageia 9 / 10 (XFCE, LXDE, Chromium, wget, etc)
-+ Fedora 43 (XFCE, LXDE, Brave-browser, wget, etc)
-+ XUbuntu 25.04 (XFCE, Brave-browser, wget, etc)
++ Mageia 9 / 10 (XFCE, LXDE, LXQt, Chromium, Firefox, wget, etc)
++ Fedora 43 (XFCE, LXDE, LXQt, Brave-browser, Firefox, wget, etc)
++ XUbuntu 25.04 (XFCE, LXDE, LXQt, Brave-browser, Firefox, wget, etc)
 
 ---
 
