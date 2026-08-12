@@ -1,0 +1,71 @@
+Просмотр:
+---
+systemctl --user show-environment | grep -i proxy
+
+Включение:
+---
+systemctl --user import-environment \
+    http_proxy https_proxy ftp_proxy all_proxy no_proxy \
+    HTTP_PROXY HTTPS_PROXY FTP_PROXY ALL_PROXY NO_PROXY
+
+Отключение:
+---
+systemctl --user unset-environment \
+    http_proxy https_proxy ftp_proxy all_proxy no_proxy \
+    HTTP_PROXY HTTPS_PROXY FTP_PROXY ALL_PROXY NO_PROXY
+
+
+Очистка кеша:
+---
+pkill firefox && firefox --purgecaches
+
+или
+
+pkill firefox
+while pgrep firefox >/dev/null; do sleep 1; done
+firefox --purgecaches
+
+
+cat /proc/$(pidof firefox)/environ | tr '\0' '\n' | grep -i proxy
+
+for p in $(pgrep -x firefox); do
+    echo "===== $p ====="
+    tr '\0' '\n' < /proc/$p/environ 2>/dev/null | grep -i proxy
+done
+
+gio launch /usr/share/applications/org.mozilla.firefox.desktop
+
+---
+Комплексная проверка
+---
+echo "=== DESKTOP ==="
+echo "$XDG_CURRENT_DESKTOP"
+
+echo "=== SESSION ==="
+pid=$(pidof lxqt-session) #lxsession, xfce4-session, lxqt-session
+tr '\0' '\n' < /proc/$pid/environ | grep -i proxy
+
+echo "=== SYSTEMD USER ==="
+systemctl --user show-environment | grep -i proxy
+
+echo "=== TERMINAL / CLI ==="
+printenv | grep -i proxy
+
+
+---
+GUI
+ │
+ ├── gsettings/libproxy
+ │      ↑
+ │   proxy-sync.sh
+ │
+ └── CLI environment
+        ↑
+   xde-proxy-env.sh
+        ↑
+   proxy-env.sh
+
+[ -r /etc/profile.d/proxy-sync.sh ] && source /etc/profile.d/proxy-sync.sh
+[ -r /etc/profile.d/xde-proxy-env.sh ] && source /etc/profile.d/xde-proxy-env.sh
+
+

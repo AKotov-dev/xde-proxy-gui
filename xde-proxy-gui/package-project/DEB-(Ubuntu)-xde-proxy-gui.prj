@@ -44,10 +44,12 @@ deb=1
 
 [FILES]
 0=/etc/profile.d/proxy-sync.sh
-1=/usr/share/icons/xde-proxy-gui.png
-2=/usr/share/applications/xde-proxy-gui.desktop
-3=/usr/share/xde-proxy-gui/
-4=/usr/share/doc/xde-proxy-gui/
+1=/etc/profile.d/xde-proxy-env.sh
+2=/usr/share/icons/xde-proxy-gui.png
+3=/usr/libexec/xde-proxy-gui/proxy-env.sh
+4=/usr/share/applications/xde-proxy-gui.desktop
+5=/usr/share/xde-proxy-gui/
+6=/usr/share/doc/xde-proxy-gui/
 
 [URL32]
 url32=https://github.com/AKotov-dev/xde-proxy-gui

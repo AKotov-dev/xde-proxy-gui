@@ -105,16 +105,11 @@ end;
 //Если есть LXDE - вставка окружения в пользовательские настройки
 procedure EnsureLXDEDesktopEnv;
 var
-  // SystemConf: string;
   UserConfDir: string;
   UserConfFile: string;
   Ini: TIniFile;
 begin
   // 1. Проверка наличия LXDE в системе
-{  SystemConf := '/etc/xdg/lxsession/LXDE/desktop.conf';
-  if not FileExists(SystemConf) then
-    Exit; // LXDE не установлен — ничего не делаем
-}
   if Pos('lxde', LowerCase(GetEnvironmentVariable('XDG_CURRENT_DESKTOP'))) = 0 then
     Exit;
 
@@ -144,16 +139,11 @@ end;
 // Если есть LXQt - вставка окружения в пользовательские настройки
 procedure EnsureLXQtDesktopEnv;
 var
-  // SystemConf: string;
   UserConfDir: string;
   UserConfFile: string;
   Ini: TIniFile;
 begin
   // 1. Проверка наличия LXQt в системе
-{  SystemConf := '/etc/xdg/lxqt/lxqt.conf';
-  if not FileExists(SystemConf) then
-    Exit; // LXQt не установлен — ничего не делаем
-}
   if Pos('lxqt', LowerCase(GetEnvironmentVariable('XDG_CURRENT_DESKTOP'))) = 0 then
     Exit;
 
