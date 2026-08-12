@@ -133,6 +133,6 @@ It should contain, for example: `DesktopNames=i3`
 ---
 ## Disclaimer
 
-This project was created to address the long-standing absence of a convenient system-wide proxy solution in lightweight desktop environments such as XFCE and LXDE.  
+This project was created to address the long-standing absence of a convenient system-wide proxy solution in lightweight desktop environments such as XFCE, LXDE and LXQt.  
   
 The software is provided "as is", without any warranties. The author assumes no responsibility for any consequences arising from improper configuration or usage.
