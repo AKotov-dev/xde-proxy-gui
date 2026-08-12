@@ -44,7 +44,7 @@ GNOME/MATE-like system-wide proxy behavior on XFCE, LXDE and LXQt.
 ---
 ### Important note
 
-- To implement the system proxy function, you need to click the "Apply" button at least once.
+- To implement the system proxy function, you need to click the **"Apply"** button at least once.
 - After installing or removing the package, you must log out and log in again (or reboot). Once this is done, the tool works continuously.
 
 ---
