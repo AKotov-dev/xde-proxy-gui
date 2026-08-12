@@ -38,7 +38,7 @@ It allows changing proxy settings:
 - **for CLI applications** after opening a new terminal (wget, curl, etc.)
 
 The tool uses **libproxy** together with **dconf / gsettings**, providing
-GNOME/MATE-like system-wide proxy behavior on XFCE and LXDE.  
+GNOME/MATE-like system-wide proxy behavior on XFCE, LXDE and LXQt.  
   
 
 ---
@@ -69,19 +69,23 @@ These variables are used by CLI applications. Because environment variables cann
 ---
 ### Additional notes
 
-During operation, **XDE-Proxy-GUI adds the following line to** ~/.bashrc:
+During operation, **XDE-Proxy-GUI adds the following lines to** ~/.bashrc:
 ```
 [ -r /etc/profile.d/proxy-sync.sh ] && source /etc/profile.d/proxy-sync.sh
+[ -r /etc/profile.d/xde-proxy-env.sh ] && source /etc/profile.d/xde-proxy-env.sh
 ```
 
-This is required for `XUbuntu`, whose shell initialization behavior differs from canonical XFCE implementations (Mageia, Fedora).  
-  
-  
 An additional section is created for **LXDE** in ~/.config/lxsession/LXDE/desktop.conf:
 ```
 [Environment_variable]
 XDG_CURRENT_DESKTOP=GNOME:LXDE
 ```
+An additional section is created for **LXQt** in ~/.config/lxqt/session.conf:
+```
+[Environment]
+XDG_CURRENT_DESKTOP=GNOME:LXDE
+```
+
 ---
 ### Tested on
 + Mageia 9 / 10 (XFCE, LXDE, Chromium, wget, etc)
