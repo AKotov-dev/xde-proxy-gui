@@ -84,7 +84,7 @@ XDG_CURRENT_DESKTOP=GNOME:LXDE
 An additional section is created for **LXQt** in ~/.config/lxqt/session.conf:
 ```
 [Environment]
-XDG_CURRENT_DESKTOP=GNOME:LXDE
+XDG_CURRENT_DESKTOP=GNOME:LXQt
 ```
 Layered diagram:
 ```

@@ -217,7 +217,7 @@ begin
 
   //Проверяем/вставляем запись в ~/.bashrc для передёргивания /etc/profile.d/xde-proxy-env.sh (XUbuntu)
   RunCommand('/bin/bash', ['-c',
-    'grep -qxF ''[ -r /etc/profile.d/xde-proxy-env.sh ] && source /etc/profile.d/proxy-sync.sh'' ~/.bashrc || echo ''[ -r /etc/profile.d/xde-proxy-env.sh ] && source /etc/profile.d/xde-proxy-env.sh'' >> ~/.bashrc'], S);
+    'grep -qxF ''[ -r /etc/profile.d/xde-proxy-env.sh ] && source /etc/profile.d/xde-proxy-env.sh'' ~/.bashrc || echo ''[ -r /etc/profile.d/xde-proxy-env.sh ] && source /etc/profile.d/xde-proxy-env.sh'' >> ~/.bashrc'], S);
 
   //LXDE? Экспорт XDG_CURRENT_DESKTOP=GNOME:LXDE через ~/.config/lxsession/LXDE/desktop.conf
   //https://github.com/lxde/lxsession/blob/master/data/desktop.conf.example
