@@ -19,5 +19,7 @@
 {"hash":180128884,"name":"tmainform.defaultbtn.hint","sourcebytes":[68,101,102,97,117,108,116],"value":"Default"},
 {"hash":68,"name":"tmainform.defaultbtn.caption","sourcebytes":[68],"value":"D"},
 {"hash":180128884,"name":"tmainform.clearbtn.hint","sourcebytes":[68,101,102,97,117,108,116],"value":"Default"},
-{"hash":68,"name":"tmainform.clearbtn.caption","sourcebytes":[68],"value":"D"}
+{"hash":68,"name":"tmainform.clearbtn.caption","sourcebytes":[68],"value":"D"},
+{"hash":123479172,"name":"tmainform.revertbtn.hint","sourcebytes":[82,101,109,111,118,101,115,32,88,68,69,45,80,114,111,120,121,45,71,85,73,32,99,111,110,102,105,103,117,114,97,116,105,111,110,32,102,114,111,109,32,121,111,117,114,32,117,115,101,114,32,101,110,118,105,114,111,110,109,101,110,116],"value":"Removes XDE-Proxy-GUI configuration from your user environment"},
+{"hash":93113492,"name":"tmainform.revertbtn.caption","sourcebytes":[82,101,118,101,114,116],"value":"Revert"}
 ]}

@@ -22,6 +22,7 @@ type
     RadioGroup1: TRadioGroup;
     DefaultBtn: TSpeedButton;
     ClearBtn: TSpeedButton;
+    RevertBtn: TSpeedButton;
     StaticText1: TStaticText;
     CheckBox2: TCheckBox;
     Edit1: TEdit;
@@ -49,7 +50,9 @@ type
     procedure ApplyBtnClick(Sender: TObject);
     procedure RadioGroup1Click(Sender: TObject);
     procedure ClearBtnClick(Sender: TObject);
+    procedure RevertBtnClick(Sender: TObject);
     procedure StartProcess(command: string);
+    procedure RevertSysConfig;
 
   private
 
@@ -79,6 +82,11 @@ resourcestring
     'You will then need to reboot your computer. ' + #13#10 + #13#10 +
     'Are you sure you want to make changes?';
 
+  SRevertMsg = 'This procedure is performed before uninstalling the program package.'
+    +
+    #13#13 +
+    'All changes made by XDE-Proxy-GUI to user configuration files will be removed. Continue?';
+
 implementation
 
 {$R *.lfm}
@@ -100,6 +108,24 @@ begin
   finally
     ExProcess.Free;
   end;
+end;
+
+// Удаляем/подчищаем пользовательские настройки XDE-Proxy-GUI перед удалением пакета
+procedure TMainForm.RevertSysConfig;
+var
+  S: string;
+begin
+  RunCommand('/bin/bash', ['-c',
+    '[ -f ~/.bashrc ] && sed -i ''/proxy-sync\.sh/d;/xde-proxy-env\.sh/d'' ~/.bashrc; ' +
+    '[ -f ~/.config/lxsession/LXDE/desktop.conf ] && ' +
+    'sed -i ''/XDG_CURRENT_DESKTOP=GNOME:LXDE/d'' ~/.config/lxsession/LXDE/desktop.conf; '
+    + '[ -f ~/.config/lxqt/session.conf ] && ' +
+    'sed -i ''/XDG_CURRENT_DESKTOP=GNOME:LXQt/d'' ~/.config/lxqt/session.conf'], S);
+
+  // Отключаем прокси
+  RunCommand('/bin/bash', ['-c', 'command -v gsettings >/dev/null 2>&1 && ' +
+    'gsettings set org.gnome.system.proxy mode ''none'''], S);
+  RadioGroup1.ItemIndex := 2;
 end;
 
 //Если есть LXDE - вставка окружения в пользовательские настройки
@@ -320,6 +346,12 @@ end;
 procedure TMainForm.ClearBtnClick(Sender: TObject);
 begin
   Edit8.Clear;
+end;
+
+procedure TMainForm.RevertBtnClick(Sender: TObject);
+begin
+  if MessageDlg(SRevertMsg, mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+    RevertSysConfig;
 end;
 
 procedure TMainForm.FormCreate(Sender: TObject);

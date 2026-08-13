@@ -18,7 +18,7 @@ object MainForm: TMainForm
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     Left = 398
-    Height = 40
+    Height = 36
     Top = 8
     Width = 128
     Anchors = [akTop, akRight]
@@ -233,9 +233,9 @@ object MainForm: TMainForm
     Visible = False
   end
   object Image1: TImage
-    Left = 296
+    Left = 312
     Height = 64
-    Top = 48
+    Top = 49
     Width = 64
     AutoSize = True
     Picture.Data = {
@@ -357,7 +357,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 72
     Top = 8
-    Width = 272
+    Width = 288
     AutoFill = True
     BorderSpacing.Left = 8
     BorderSpacing.Top = 8
@@ -370,7 +370,7 @@ object MainForm: TMainForm
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 3
     ClientHeight = 54
-    ClientWidth = 270
+    ClientWidth = 286
     Columns = 3
     Items.Strings = (
       'Auto'
@@ -468,6 +468,24 @@ object MainForm: TMainForm
     ShowHint = True
     ParentShowHint = False
     OnClick = ClearBtnClick
+  end
+  object RevertBtn: TSpeedButton
+    AnchorSideTop.Control = ApplyBtn
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 398
+    Height = 36
+    Hint = 'Removes XDE-Proxy-GUI configuration from your user environment'
+    Top = 49
+    Width = 128
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 8
+    Caption = 'Revert'
+    ShowHint = True
+    ParentShowHint = False
+    OnClick = RevertBtnClick
   end
   object XMLPropStorage1: TXMLPropStorage
     StoredValues = <>

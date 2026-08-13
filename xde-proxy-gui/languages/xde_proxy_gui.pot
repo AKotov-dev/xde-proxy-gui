@@ -89,6 +89,15 @@ msgstr ""
 msgid "Mode"
 msgstr ""
 
+#: tmainform.revertbtn.caption
+msgctxt "tmainform.revertbtn.caption"
+msgid "Revert"
+msgstr ""
+
+#: tmainform.revertbtn.hint
+msgid "Removes XDE-Proxy-GUI configuration from your user environment"
+msgstr ""
+
 #: tmainform.statictext1.caption
 msgid "License: GPLv3   Author: AKotov-dev (C) 2026"
 msgstr ""
@@ -127,5 +136,12 @@ msgstr ""
 
 #: unit1.snoutils
 msgid "gsettings or dconf not found!"
+msgstr ""
+
+#: unit1.srevertmsg
+msgid ""
+"This procedure is performed before uninstalling the program package.\n"
+"\n"
+"All changes made by XDE-Proxy-GUI to user configuration files will be removed. Continue?"
 msgstr ""
 

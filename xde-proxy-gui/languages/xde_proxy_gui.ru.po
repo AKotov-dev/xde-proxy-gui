@@ -99,6 +99,15 @@ msgstr "URL автоконфигурации"
 msgid "Mode"
 msgstr "Режим"
 
+#: tmainform.revertbtn.caption
+msgctxt "tmainform.revertbtn.caption"
+msgid "Revert"
+msgstr "Откатить"
+
+#: tmainform.revertbtn.hint
+msgid "Removes XDE-Proxy-GUI configuration from your user environment"
+msgstr "Удаляет конфигурацию XDE-Proxy-GUI из вашей пользовательской среды"
+
 #: tmainform.statictext1.caption
 msgid "License: GPLv3   Author: AKotov-dev (C) 2026"
 msgstr "Лицензия: GPLv3   Автор: AKotov-dev (C) 2026"
@@ -150,3 +159,13 @@ msgstr "Выкл"
 #: unit1.snoutils
 msgid "gsettings or dconf not found!"
 msgstr "gsettings или dconf не найдены!"
+
+#: unit1.srevertmsg
+msgid ""
+"This procedure is performed before uninstalling the program package.\n"
+"\n"
+"All changes made by XDE-Proxy-GUI to user configuration files will be removed. Continue?"
+msgstr ""
+"Эта процедура выполняется перед удалением пакета программы.\n"
+"\n"
+"Все изменения,  внесённые XDE-Proxy-GUI в файлах конфигурации пользователя будут удалены. Продолжить?"
