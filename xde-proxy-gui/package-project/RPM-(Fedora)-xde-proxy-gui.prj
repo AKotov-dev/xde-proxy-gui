@@ -67,7 +67,7 @@ toolversion=4.4
 0=v0.5
 1=+ Added a Revert function
 2=+ Support for LXQt >= v2.1 and Firefox
-3=+ RPM packages for Mageia-10
+3=+ RPM packages for Mageia-9/10
 4=+ DEB package for XUbuntu / LUbuntu >= 25.04
 5=
 6=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
