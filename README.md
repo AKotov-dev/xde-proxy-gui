@@ -110,6 +110,19 @@ GUI
 
 ---
 
+### LXQt: Orca may appear in Autostart
+
+When GNOME compatibility is enabled (`XDG_CURRENT_DESKTOP=GNOME:LXQt`),
+LXQt may show **Orca Screen Reader** in its autostart settings.  
+  
+If `Orca` is enabled unexpectedly, open:  
+  
+**Preferences → LXQt Settings → Session Settings → Autostart** and uncheck **Orca Screen Reader**.  
+  
+This is a side effect of GNOME compatibility and is not required by `XDE-Proxy-GUI`.
+
+---
+
 ### Optional (for those who prefer something more exotic)
 
 Starting with **xde-proxy-gui v0.3**, the application also works with the **IceWM**, **Openbox** and **i3** window managers, provided that the session correctly declares `DesktopNames`.
