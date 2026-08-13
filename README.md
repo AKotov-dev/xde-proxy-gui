@@ -25,7 +25,7 @@ Packages for Mageia 9/10 are built using the *Portable RPM* approach with [RPMCr
   
 For Fedora you can build your own package by loading the [project file](https://github.com/AKotov-dev/xde-proxy-gui/raw/refs/heads/main/xde-proxy-gui/package-project/RPM-(Fedora)-xde-proxy-gui.prj) into `RPMCreator`.  
   
-`dconf-editor` is **not required**, but it is a convenient tool for inspecting the actual proxy settings and may be useful for further development.
+`dconf-editor` is a convenient tool for inspecting the actual proxy settings and may be useful for further development.
 
 ---
 
