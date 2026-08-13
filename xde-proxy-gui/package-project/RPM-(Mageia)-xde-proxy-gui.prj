@@ -65,34 +65,35 @@ toolversion=4.4
 
 [INFO]
 0=v0.5
-1=+ Support for LXQt >= v2.1
-2=+ RPM packages for Mageia-10
-3=+ DEB package for XUbuntu / LUbuntu >= 25.04
-4=
-5=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
-6=
-7=v0.4
-8=+ Enter - Apply, Esc - Close
-9=+ RPM packages for Mageia-9/10
-10=+ DEB package for XUbuntu-25.04
-11=
-12=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
-13=
-14=v0.3
-15=+ Optional support for i3 wm
-16=+ RPM packages for Mageia-9/10
-17=+ DEB package for XUbuntu-25.04
-18=
-19=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
-20=
-21=v0.2
-22=+ Optional support for IceWM and Openbox
-23=+ RPM packages for Mageia-9/10
-24=+ DEB package for XUbuntu-25.04
-25=
-26=**Note:** В Mageia-10 пакет зависимостей
-27=
-28=V0.1
-29=+ Combined XDG_CURRENT_DESKTOP
-30=+ Full compatibility with XFCE and LXDE
-31=+ DEB package for XUbuntu-25.04
+1=+ Added a Revert function
+2=+ Support for LXQt >= v2.1 and Firefox
+3=+ RPM packages for Mageia-10
+4=+ DEB package for XUbuntu / LUbuntu >= 25.04
+5=
+6=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
+7=
+8=v0.4
+9=+ Enter - Apply, Esc - Close
+10=+ RPM packages for Mageia-9/10
+11=+ DEB package for XUbuntu-25.04
+12=
+13=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
+14=
+15=v0.3
+16=+ Optional support for i3 wm
+17=+ RPM packages for Mageia-9/10
+18=+ DEB package for XUbuntu-25.04
+19=
+20=**Note:** After installing or removing the package, you must log out and log in again (or reboot).
+21=
+22=v0.2
+23=+ Optional support for IceWM and Openbox
+24=+ RPM packages for Mageia-9/10
+25=+ DEB package for XUbuntu-25.04
+26=
+27=**Note:** В Mageia-10 пакет зависимостей
+28=
+29=V0.1
+30=+ Combined XDG_CURRENT_DESKTOP
+31=+ Full compatibility with XFCE and LXDE
+32=+ DEB package for XUbuntu-25.04
