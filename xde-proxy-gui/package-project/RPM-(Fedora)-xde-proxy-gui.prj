@@ -5,7 +5,7 @@ name=xde-proxy-gui
 version=0.5
 
 [RELEASE]
-release=0.mrx10
+release=0.fc43
 
 [GROUP]
 group=System/Configuration
