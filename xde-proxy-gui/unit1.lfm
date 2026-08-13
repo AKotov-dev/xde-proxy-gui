@@ -357,7 +357,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 72
     Top = 8
-    Width = 288
+    Width = 280
     AutoFill = True
     BorderSpacing.Left = 8
     BorderSpacing.Top = 8
@@ -370,7 +370,7 @@ object MainForm: TMainForm
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 3
     ClientHeight = 54
-    ClientWidth = 286
+    ClientWidth = 278
     Columns = 3
     Items.Strings = (
       'Auto'

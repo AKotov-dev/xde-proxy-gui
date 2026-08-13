@@ -111,7 +111,7 @@ begin
 end;
 
 // Удаляем/подчищаем пользовательские настройки XDE-Proxy-GUI перед удалением пакета
-procedure MainForm.RevertSysConfig;
+procedure TMainForm.RevertSysConfig;
 var
   S: string;
 begin
