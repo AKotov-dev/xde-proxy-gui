@@ -31,7 +31,7 @@ For Fedora you can build your own package by loading the [project file](https://
 
 ## What is this?
 
-**XDE-Proxy-GUI** is a simple graphical tool for managing **system-wide proxy settings** in XFCE and LXDE.  
+**XDE-Proxy-GUI** is a simple graphical tool for managing **system-wide proxy settings** in XFCE, LXDE and LXQt.  
   
 It allows changing proxy settings:
 - **immediately for GUI applications** (browsers, etc.)
