@@ -7,7 +7,7 @@ Lightweight proxy manager with GNOME-compatible live switching.
 - XFCE, LXDE and LXQt — officially supported
 - Optional WM support — IceWM, Openbox, i3 (requires `DesktopNames` setting)
 
-![](https://github.com/AKotov-dev/xde-proxy-gui/blob/main/Screenshot1.png)
+![](https://github.com/AKotov-dev/xde-proxy-gui/blob/main/Screenshot2.png)
 
 ## Dependencies
 
