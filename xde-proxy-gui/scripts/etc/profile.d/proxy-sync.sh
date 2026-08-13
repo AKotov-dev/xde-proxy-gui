@@ -1,7 +1,7 @@
 # proxy-sync.sh — подготовка окружения для libproxy/gsettings
 
 case "${XDG_CURRENT_DESKTOP,,}" in
-    *xfce*|*lxde*|*lxqt*|*icewm*|*openbox*|*i3*)
+    *xfce*|*lxde*|*lxqt*|*icewm*|*openbox*|*i3*|*budgie*)
         ;;
     *)
         return
