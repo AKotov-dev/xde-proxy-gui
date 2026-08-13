@@ -46,6 +46,7 @@ GNOME/MATE-like system-wide proxy behavior on XFCE, LXDE and LXQt.
 
 - To implement the system proxy function, you need to click the **"Apply"** button at least once.
 - After installing or removing the package, you must log out and log in again (or reboot). Once this is done, the tool works continuously.
+- The **"Revert"** function allows you to remove changes made by `XDE-Proxy-GUI` to the user's environment before removing the package from the system, i.e., it returns the system settings to their original state.
 
 ---
 ## How does it work?
