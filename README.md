@@ -3,7 +3,8 @@
 Lightweight proxy manager with GNOME-compatible live switching.  
   
 **Supported environments**
-- X11 (not Wayland)
+- X11
+- Wayland: experimental support
 - XFCE, LXDE and LXQt >= 2.1 — officially supported
 - Optional WM support — IceWM, Openbox, i3 (requires `DesktopNames` setting)
 
